@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0">
+        <title>JS Assignment</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#qg">Quote Box</a></li>
+                <li><a href="#hc">Hero converter</a></li>
+                <li><a href="#sr">Series</a></li>
+                <li><a href="#mg">Magic Box</a></li>
+            </ul>
+        </nav>
+        <section class="quote-genertator" id="qg">
+            <div class="home">  
+                <div class="header">
+                    <h2>Quote Box</h2>
+                </div>
+                <div class="main-content">
+                    <div class="text-area">
+                        <span class="quote"></span>
+                    </div>
+                    <div class="writer"></div>
+                </div>
+                <div class="button-area">  
+                    <div class="btn">
+                        <button onclick="changeGreen()" class="green">Green</button>
+                        <button onclick="changeYellow()" class="yellow">Yellow</button>
+                        <button onclick="changeSblue()" class="SkyBlue">SkyBlue</button>
+                        <button onclick="changeOrange()" class="orange">Orange</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero-converter" id="hc">
+            <div class="header">
+                <h2>Hero converter</h2>
+            </div>
+            <div class="converter">
+                <p>
+                    <label>Convert: </label>
+                    <input class="inva" id="inputn" type="number" placeholder="Enter the value">
+                    <select class="drop-value" required="">
+                        <option value="kg">lb to kg</option>
+                        <option value="lb">kg to lb</option>
+                    </select>
+                    </p>
+                    <p>Result: <span id="outputs"></span></p>
+            </div>
+        </section>
+
+        <section class="Series" id="sr">
+            <div class="header">
+                <h2>Series</h2>
+            </div>
+            <div class="series-box">
+                <div class="sr-in">
+                    <label>Input Series of Number:&nbsp</label><br>
+                    <input type="text" id="numbers" class="box1" placeholder="Enter the numbers" oninput="calculate()"><br><br>
+                </div>
+                <div class="output">
+                    <p>Max: <span id="max"> </span> <br></p>
+                    <p>Min: <span id="min"> </span> <br></p>
+                    <p>Sum: <span id="sum"> </span> <br></p>
+                    <p>Average: <span id="avg"> </span> <br></p>
+                    <p>Reverse: <span id="rv"> </span> <br></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="magic-part" id="mg">
+            <div class="header">
+                <h2>Magic Box</h2>
+            </div>
+            <div class="magic-main">
+              <div class="magic-text">
+                <textarea class="magic-textarea" placeholder="Enter the text"></textarea>
+              </div>
+              <div class="magic-btn">
+                <button onclick="clearText()">Clear It</button>
+                <button class="btn-cap" onclick="cap()">Capitalize</button>
+                <button onclick="sorted()">Sort</button>
+                <button onclick="revText()">Reverse</button>
+                <button onclick="strip()">Strip Blank</button>
+                <button onclick="add()">Add Numbers</button>
+                <button onclick="shuffle()">Shuffle</button>
+              </div>
+            </div>
+          </section>
+
+        <script src="javasc.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+        <script>
+            $(window).scroll(function(){
+                if($(window).scrollTop()){
+                    $("nav").addClass("black");
+                }
+                else{
+                    $("nav").removeClass("black");
+                }
+            });
+        </script>
+    </body>
+</html>
