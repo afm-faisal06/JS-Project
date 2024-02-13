@@ -1,6 +1,6 @@
 # JS Project
 
-## Part 1: Quote Box
+## Part 1.1: Quote Box
 Imagine you're creating a simple yet engaging homepage for your website. One cool feature you want to include is a **random quote generator**. So, every time someone visits your homepage, they'll see a fresh, inspiring quote. Here's how it works:
 - You have a collection of inspiring quotes stored in an array.
 - The homepage displays a randomly selected quote, centered and enclosed in a stylish box.
